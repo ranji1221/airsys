@@ -7,12 +7,33 @@ import lombok.NoArgsConstructor;
 
 @SuppressWarnings("serial")
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class Foo implements Serializable{
 	private String name;
 	private int age;
 	
+	public int getAge() {
+		return age;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Foo(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+
+	public Foo() {
+	}
+
 	public static void main(String[] args) {
 		Foo f = new Foo("zhangsan",19);
 		//--f.setName("lisi");
@@ -22,4 +43,6 @@ public class Foo implements Serializable{
 		System.out.println(f);
 		
 	}
+
+
 }
