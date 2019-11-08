@@ -11,7 +11,7 @@ import org.springframework.web.servlet.view.JstlView;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
 
 /**
- * 应用配置 (Spring配置)
+ * 应用配置 (Spring配置)  
  * 它相当于XML的替代者
  * @author RanJi
  *
@@ -22,6 +22,12 @@ import org.springframework.web.servlet.view.UrlBasedViewResolver;
 @EnableAspectJAutoProxy
 //-- @EnableWebMvc  切记注释掉这个标注，	
 public class AppConfig extends WebMvcConfigurationSupport{
+	
+	@Bean
+	public String hello(){
+		return "hello";
+	}
+	 
 	//-- 配置JSP解析器Bean
 	@Bean
     public UrlBasedViewResolver setupViewResolver() {
