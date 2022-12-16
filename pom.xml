@@ -15,7 +15,7 @@
 		<!-- 忽略掉web.xml文件，因为我们使用servlet3.0来开发web项目 -->
 		<failOnMissingWebXml>false</failOnMissingWebXml>
 		<!-- 自定义版本标记 -->
-		<spring.version>5.1.7.Release</spring.version>
+		<spring.version>5.2.20.RELEASE</spring.version>
 		<poi.version>3.17</poi.version>
 	</properties>
 
